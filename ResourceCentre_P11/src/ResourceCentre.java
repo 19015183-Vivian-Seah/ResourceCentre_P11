@@ -2,6 +2,14 @@ import java.util.ArrayList;
 
 public class ResourceCentre {
 
+	/**
+	 * 
+	 */
+	private static final int RETURN_CHROMEBOOK = 2;
+	/**
+	 * 
+	 */
+	private static final int RETURN_CAMCORDER = 1;
 	private static final int OPTION_LOAN = 3;
 	/**
 	 * 
@@ -95,10 +103,10 @@ public class ResourceCentre {
 				System.out.println("2. Chromebook");
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
-				if (itemType == 1) {
+				if (itemType == RETURN_CAMCORDER) {
 					// Return Camcorder
 					ResourceCentre.returnCamcorder(camcorderList);
-				} else if (itemType == 2) {
+				} else if (itemType == RETURN_CHROMEBOOK) {
 					// Return Chromebook
 					ResourceCentre.returnChromebook(chromebookList);
 				} else {
