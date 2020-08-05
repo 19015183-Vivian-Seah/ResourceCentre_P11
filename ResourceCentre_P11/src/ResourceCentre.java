@@ -77,7 +77,7 @@ public class ResourceCentre {
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
 				if (itemType == 1) {
-					// Loan camcorder
+					// Loan Camcorder
 					ResourceCentre.loanCamcorder(camcorderList);
 				} else if (itemType == 2) {
 					// Loan Chromebook
