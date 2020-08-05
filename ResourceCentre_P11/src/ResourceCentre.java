@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class ResourceCentre {
 
+	private static final int OPTION_LOANITEM = 3;
 	/**
 	 * 
 	 */
@@ -67,7 +68,7 @@ public class ResourceCentre {
 					System.out.println("Invalid type");
 				}
 
-			} else if (option == 3) {
+			} else if (option == OPTION_LOANITEM) {
 				// Loan item
 				ResourceCentre.setHeader("LOAN");			
 				ResourceCentre.setHeader("ITEM TYPES");
