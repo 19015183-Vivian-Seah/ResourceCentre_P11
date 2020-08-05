@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class ResourceCentre {
 
+	private static final int LOAN_CHROMEBOOK = 2;
+	private static final int LOAN_CAMCORDER = 1;
 	/**
 	 * 
 	 */
@@ -85,10 +87,10 @@ public class ResourceCentre {
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
-				if (itemType == 1) {
+				if (itemType == LOAN_CAMCORDER) {
 					// Loan Camcorder
 					ResourceCentre.loanCamcorder(camcorderList);
-				} else if (itemType == 2) {
+				} else if (itemType == LOAN_CHROMEBOOK) {
 					// Loan Chromebook
 					ResourceCentre.loanChromebook(chromebookList);
 				} else {
