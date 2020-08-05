@@ -2,6 +2,22 @@ import java.util.ArrayList;
 
 public class ResourceCentre {
 
+	/**
+	 * 
+	 */
+	private static final int CHROMEBOOK = 2;
+	/**
+	 * 
+	 */
+	private static final int ADD_CHROMEBOOK = CHROMEBOOK;
+	/**
+	 * 
+	 */
+	private static final int CAMCORDER = 1;
+	/**
+	 * 
+	 */
+	private static final int ADD_CAMCORDER = CAMCORDER;
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_QUIT = 5;
 	private static final int OPTION_ADDITEM = 2;
@@ -37,12 +53,12 @@ public class ResourceCentre {
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
-				if (itemType == 1) {
+				if (itemType == ADD_CAMCORDER) {
 					// Add a camcorder
 					Camcorder cc = inputCamcorder();
 					ResourceCentre.addCamcorder(camcorderList, cc);
 
-				} else if (itemType == 2) {
+				} else if (itemType == ADD_CHROMEBOOK) {
 					// Add Chromebook
 					Chromebook cb = inputChromebook();
 					ResourceCentre.addChromebook(chromebookList, cb);
